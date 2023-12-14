@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.aside{
+    //flex: 0 0 25%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include m.tablet {
+        min-width: 25rem;
+    }
+    &__centrado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__foto {
+        min-width: 15rem;
+        width: 19rem;
+        @include m.tablet {
+            width: 19rem;            
+        }        
+        border-radius: 0.2rem;
+        margin-top: 1rem;
+    }
+    &__profesion{
+        color: v.$negro;
+        margin: 0;
+        padding: 1rem;
+        white-space: nowrap;
+        font-size: clamp(1.2rem, -0.8rem + 10vw ,1.8rem);
+    }
+    &__redes{
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        gap: 2rem;
+        padding: 1rem;
+        &--enlace{
+            .aside__logo {
+                width: 3rem;
+                filter: invert(5%) sepia(5%) saturate(812%) hue-rotate(314deg) brightness(96%) contrast(95%);
+                transition: scale 0.3s ease;
+                &:hover{
+                    scale: 1.2;
+                    filter: invert(44%) sepia(76%) saturate(1919%) hue-rotate(352deg) brightness(94%) contrast(88%);
+                }
+            }
+        }
+        &--centrado{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__contacto {
+        @include m.boton(v.$negro, v.$grisClaro);
+        margin-top: 1rem;
+    }
+}

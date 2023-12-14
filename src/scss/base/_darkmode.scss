@@ -1,0 +1,135 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dark-mode {
+    .principal{
+        background-color: lighten(v.$negro, 5);
+    }   
+    
+    p {
+        color: v.$grisClaro;
+    }
+
+    a, h1,h2,h3,h4  {
+        color: v.$grisClaro;
+    }
+    i {
+        color: v.$grisClaro;
+    }
+    .header {
+        background-color: v.$negro;
+        border-bottom: 1px solid v.$azul;
+        &__titulo {
+            a {
+                font-weight: 400;
+                color: v.$grisClaro;
+            }
+            span {
+                font-weight: 700;
+                color: v.$grisClaro;
+            }            
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline solid v.$azul 2px;
+            }
+        }
+        &__modo {
+            &--logo{
+                width: 5rem;
+                transition: scale 0.3s ease;
+                filter: invert(100%) sepia(1%) saturate(407%) hue-rotate(82deg) brightness(114%) contrast(88%);
+                &:hover {
+                    cursor: pointer;
+                    filter: invert(53%) sepia(25%) saturate(936%) hue-rotate(164deg) brightness(98%) contrast(97%);
+                    scale: 1.2;
+                }
+            }
+            
+            
+        }
+    }
+    .inf {
+        background-color: lighten(v.$negro, 3);
+    }
+    .aside{        
+        &__profesion{
+            color: v.$grisClaro;
+    
+        }
+        &__redes{
+            &--enlace{
+                .aside__logo {
+                    filter: invert(100%) sepia(1%) saturate(407%) hue-rotate(82deg) brightness(114%) contrast(88%);
+                    &:hover{
+                        scale: 1.2;
+                        filter: invert(53%) sepia(25%) saturate(936%) hue-rotate(164deg) brightness(98%) contrast(97%);
+                    }
+                }
+            }
+        }
+        &__contacto{
+            background-color: v.$grisClaro;
+            color: v.$negro;
+            &:hover {
+                text-decoration: underline solid v.$azul 2px;
+            }       
+
+        }
+    }
+    .contenido{
+        .about__enlaces{
+            &--boton{
+                background-color: v.$grisClaro;
+                color: v.$negro;
+                &:hover {
+                    text-decoration: underline solid v.$azul 2px;
+                }  
+            }
+        }
+        .coding{
+            p{
+                color: v.$grisClaro;
+                --sombra: #4397d1;
+            }
+        }
+        .portfolio, .skills, .contacto, .agradecimiento, .error {
+            .btn {
+                &__regresar{
+                    @include m.boton(v.$grisClaro, v.$negro);
+                    width: auto;
+                } 
+                &__logo {
+                    filter: invert(5%) sepia(5%) saturate(812%) hue-rotate(314deg) brightness(96%) contrast(95%);
+                }
+            } 
+        }
+    }
+    .contacto{
+        .formulario{
+            &__label{
+                color: v.$grisClaro;
+            }
+            &__input{
+                color: v.$grisClaro;
+                background-color: lighten(v.$negro, 8);
+                border: 1px solid v.$grisClaro;
+            }
+            &__mensaje{
+                color: v.$grisClaro;
+                background-color: lighten(v.$negro, 8);
+                border: 1px solid v.$grisClaro;
+            }
+            &__submit{
+                @include m.boton(v.$grisClaro, v.$negro);
+                &:hover {
+                    text-decoration: underline solid v.$azul 2px;
+                }  
+            }
+        }
+    }
+
+
+
+
+
+}

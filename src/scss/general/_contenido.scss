@@ -1,0 +1,146 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido {
+    //flex: 1;
+    padding: 2rem 0 2rem 0;
+    
+    @include m.tablet {
+        overflow-y: auto; 
+        @include m.scrollbar;
+        
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__reseña{
+            &--texto{
+                text-align: center;
+                font-size: 1.7rem;
+            }
+        }
+        &__enlaces{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            @include m.tablet {
+                flex-direction: row;
+                justify-content: center;
+            }
+            gap: 2rem;
+            &--boton{
+                @include m.boton(v.$negro, v.$grisClaro);
+                padding: 1rem;
+                &:hover {
+                    text-decoration: underline solid v.$naranja 2px;
+                }  
+            }
+        }
+    }
+    .coding{    
+        padding: 1rem;
+        p {
+            animation: extrude 4s infinite step-end;
+            color: v.$negro;
+            --sombra: #E3651D;
+            display: block;
+            font: 700 20vmin/1 "Courier", sans-serif;
+            font-size: 3.5rem;
+            letter-spacing: 1rem;
+            margin: 1rem auto;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0;
+        }
+        @for $i from 1 through 4 {
+            p:nth-of-type(#{$i}) {
+                animation-delay: 1s + $i; 
+            }
+        } 
+        @keyframes extrude {
+            0% {
+                text-shadow:
+                1px 1px var(--sombra),
+                2px 2px var(--sombra),
+                3px 3px var(--sombra),
+                4px 4px var(--sombra);
+            }
+            25% {
+                text-shadow: none;
+            }
+        }
+        
+    }
+    .portfolio, .skills, .contacto, .agradecimiento, .error{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            display: flex;
+            justify-content: right;
+            &__regresar {
+                @include m.boton(v.$negro, v.$grisClaro);
+                width: auto;                
+            }
+            &__centrado{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } 
+            &__logo {
+                width: 2rem;
+                filter: invert(100%) sepia(1%) saturate(407%) hue-rotate(82deg) brightness(114%) contrast(88%);
+            }
+        }
+    }
+    .skills{
+        .lenguage-frameworks, .apps-tools, .patterns {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &__titulo{
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            &__inf-logos {
+                padding: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.3rem;
+                .logo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.7rem;
+                    padding: 0.5rem;
+                    &__texto{
+                        font-size: 1.5rem;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    &__centrado{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &__imagen {
+                        width: 2.8rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+    .agradecimiento{
+        margin-top: 2rem;
+    }
+}

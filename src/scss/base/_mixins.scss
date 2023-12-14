@@ -1,0 +1,78 @@
+@use 'variables' as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+
+@mixin boton($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1rem;
+    color: $colorTexto;
+    font-size: clamp(1rem, -0.8rem + 10vw ,2rem);
+    font-weight: 400;
+    border: none;
+    border-radius: 0.3rem;
+    text-align: center;
+    width: clamp(15rem, -0.8rem + 10vw , 20rem);
+    transition: scale 0.5s ease;
+    i {
+        color: $colorTexto;
+    }
+    &:hover {
+        text-decoration: underline solid v.$naranja 2px;
+        cursor: pointer;
+        scale: 1.2;
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+@mixin grid-auto($espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+}
+@mixin texto-fluido($min, $max) {
+    font-size: clamp($min, -0.8rem + 10vw ,$max);
+}
+
+@mixin scrollbar {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: auto;
+    }
+    &::-webkit-scrollbar-track {
+        //background-color:  v.$grisClaro;
+        //transition: background-color 0.1s ease-in-out;
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(110, 110, 110);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(110, 110, 110);
+    }
+    &::-webkit-scrollbar-track-piece {
+        //background-color: v.$grisClaro;
+        //transition: background-color 0.2s ease;
+        display: none;
+        
+    }
+}
