@@ -1,7 +1,7 @@
 <h3 class="titulo__principal">¡Hola!</h3>
 <div class="about">
     <div class="about__reseña contenedor">
-        <p class="about__reseña--texto"> Mi nombre es Angel y me emociona la oportunidad de aportar al mundo del desarrollo web, seguir aprendiendo y creciendo en este campo dinámico. Soy Petlover, Gamer y Ciclista Aficionado.</p> 
+        <p class="about__reseña--texto"> Mi nombre es Angel y me emociona aportar al mundo del desarrollo web, seguir aprendiendo y creciendo en este campo dinámico. Soy Petlover, Gamer y Ciclista Aficionado.</p> 
         <p class="about__reseña--texto">Actualmente, busco oportunidades para aplicar mis habilidades de desarrollador web y contribuir a proyectos innovadores.</p>
     </div>
     
