@@ -9,7 +9,7 @@
                 <img class="btn__logo" 
                     loading="lazy" 
                     src="build/img/logos/back.jpg" 
-                    alt="Foto Perfil">
+                    alt="boton regresar">
             </picture>
         </a>
     </div>

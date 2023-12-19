@@ -2,7 +2,7 @@
 
 /** Media Queries **/
 @mixin telefono {
-    @media (min-width: v.$telefono) {
+    @media (min-width: v.$phone) {
         @content;
     }
 }
@@ -75,4 +75,9 @@
         display: none;
         
     }
+}
+@mixin reset-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

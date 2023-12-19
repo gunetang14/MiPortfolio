@@ -103,6 +103,15 @@
                 }
             } 
         }
+        .portfolio{
+            .pages{
+                .page{
+                    &__tecnologia-nombre{
+                            color: v.$grisClaro;                        
+                    }
+                }
+            }
+        }
     }
     .contacto{
         .formulario{
