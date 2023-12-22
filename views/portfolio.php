@@ -26,7 +26,9 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <p class="page__nombre">DevWebCamp</p>
+            <a class="page__enlace" href="https://github.com/gunetang14/devwebcamppage" class="page__enlace" target="_blank">
+                <p class="page__nombre">DevWebCamp</p>
+            </a>
             <p class="page__descripcion">Página sobre Eventos de Desarrollo Web. Contiene MVC, CRUD, BEM</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -56,7 +58,9 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <p class="page__nombre">UpTask</p>
+            <a class="page__enlace" href="https://github.com/gunetang14/uptaskpage" class="page__enlace" target="_blank">
+                <p class="page__nombre">UpTask</p>
+            </a>
             <p class="page__descripcion">Administrador de Tareas y Proyectos. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -82,7 +86,9 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <p class="page__nombre">AppSalon</p>
+            <a class="page__enlace" href="https://github.com/gunetang14/appsalonpage" class="page__enlace" target="_blank">
+                <p class="page__nombre">AppSalon</p>
+            </a>
             <p class="page__descripcion">Administrador y Organizador de Citas de un Salon de Belleza. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -107,7 +113,9 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <p class="page__nombre">BienesRaices</p>
+            <a class="page__enlace" href="https://github.com/gunetang14/bienesraicespage" class="page__enlace" target="_blank">
+                <p class="page__nombre">BienesRaices</p>
+            </a>
             <p class="page__descripcion">Página sobre venta de casas y apartamentos. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
