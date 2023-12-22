@@ -27,7 +27,7 @@
                 </picture>
             </a>
             <p class="page__nombre">DevWebCamp</p>
-            <p class="page__descripcion">Página sobre Eventos de Desarrollo Web. Contiene MVC, CRUD</p>
+            <p class="page__descripcion">Página sobre Eventos de Desarrollo Web. Contiene MVC, CRUD, BEM</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
                 <ul class="page__tecnologia">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="page">
-            <a class="page__enlace" href="https://uptask-angelquiroz.000webhostapp.com/" target="_blank">
+            <a class="page__enlace" href="https://uptaskangelquiroz.000webhostapp.com/" target="_blank">
                 <picture class="page__centrado"> 
                 <source srcset="build/img/uptask.webp" type="image/webp">
                 <source srcset="build/img/uptask.png" type="image/png">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="page">
-            <a class="page__enlace" href="https://salon-angelquiroz.000webhostapp.com/" target="_blank">
+            <a class="page__enlace" href="https://barberia-angelquiroz.000webhostapp.com/" target="_blank">
                 <picture class="page__centrado"> 
                 <source srcset="build/img/appsalon.webp" type="image/webp">
                 <source srcset="build/img/appsalon.png" type="image/png">
