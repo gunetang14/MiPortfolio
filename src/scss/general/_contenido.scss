@@ -149,7 +149,7 @@
             display: grid;
             @include m.grid(1, 1rem);
             @include m.tablet {
-                @include m.grid (2, 1rem);
+                @include m.grid (2, 3rem);
             }
             .page{
                 display: flex;
@@ -157,6 +157,8 @@
                 justify-content: top;
                 align-items: center;
                 padding: 1rem;
+                
+                @include m.card(v.$negro);
                 &__enlace{
                     &::hover{
                         cursor: pointer;

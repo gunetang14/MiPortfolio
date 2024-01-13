@@ -26,9 +26,7 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <a class="page__enlace" href="https://github.com/gunetang14/devwebcamppage" class="page__enlace" target="_blank">
-                <p class="page__nombre">DevWebCamp</p>
-            </a>
+            <p class="page__nombre">DevWebCamp</p>
             <p class="page__descripcion">Página sobre Eventos de Desarrollo Web. Contiene MVC, CRUD, BEM</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -58,9 +56,7 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <a class="page__enlace" href="https://github.com/gunetang14/uptaskpage" class="page__enlace" target="_blank">
-                <p class="page__nombre">UpTask</p>
-            </a>
+            <p class="page__nombre">UpTask</p>
             <p class="page__descripcion">Administrador de Tareas y Proyectos. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -86,9 +82,7 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <a class="page__enlace" href="https://github.com/gunetang14/appsalonpage" class="page__enlace" target="_blank">
-                <p class="page__nombre">AppSalon</p>
-            </a>
+            <p class="page__nombre">AppSalon</p>
             <p class="page__descripcion">Administrador y Organizador de Citas de un Salon de Belleza. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -113,9 +107,7 @@
                     alt="imagen pagina">
                 </picture>
             </a>
-            <a class="page__enlace" href="https://github.com/gunetang14/bienesraicespage" class="page__enlace" target="_blank">
-                <p class="page__nombre">BienesRaices</p>
-            </a>
+            <p class="page__nombre">BienesRaices</p>
             <p class="page__descripcion">Página sobre venta de casas y apartamentos. Contiene MVC, CRUD</p>
             <div class="page__tecnologias">
                 <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
@@ -125,6 +117,29 @@
                     <li class="page__tecnologia-nombre">JavaScript</li>
                     <li class="page__tecnologia-nombre">SQL</li>
                     <li class="page__tecnologia-nombre">Brevo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page">
+            <a class="page__enlace" href="https://spa-wpangelquiroz.000webhostapp.com/" target="_blank">
+                <picture class="page__centrado"> 
+                <source srcset="build/img/beautynails.webp" type="image/webp">
+                <source srcset="build/img/beautynails.png" type="image/png">
+                <img class="page__imagen" 
+                    loading="lazy" 
+                    src="build/img/beautynails.jpg" 
+                    alt="imagen pagina">
+                </picture>
+            </a>
+            <p class="page__nombre">BeautyNails</p>
+            <p class="page__descripcion">Página sobre Negocio de Belleza Femenina</p>
+            <div class="page__tecnologias">
+                <p class="page__nombre-lenguajes">Lenguajes, Frameworks y Librerias</p>
+                <ul class="page__tecnologia">
+                    <li class="page__tecnologia-nombre">WordPress</li>
+                    <li class="page__tecnologia-nombre">Gutenberg + Spectra</li>
+                    <li class="page__tecnologia-nombre">WPForms Lite</li>
                 </ul>
             </div>
         </div>

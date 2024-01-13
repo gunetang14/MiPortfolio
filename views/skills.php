@@ -187,6 +187,17 @@
                         alt="logo">
                 </picture>
             </div>
+            <div class="logo">
+                <p class="logo__texto">WordPress</p>
+                <picture class="logo__centrado"> 
+                    <source srcset="build/img/logos/wordpress.webp" type="image/webp">
+                    <source srcset="build/img/logos/wordpress.png" type="image/png">
+                    <img class="logo__imagen" 
+                        loading="lazy" 
+                        src="build/img/logos/wordpress.jpg" 
+                        alt="logo">
+                </picture>
+            </div>
         </div>
     </div>
     <div class="patterns contenedor">

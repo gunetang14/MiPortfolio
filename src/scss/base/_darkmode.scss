@@ -106,6 +106,7 @@
         .portfolio{
             .pages{
                 .page{
+                    border: 1px solid v.$grisClaro;
                     &__tecnologia-nombre{
                             color: v.$grisClaro;                        
                     }
